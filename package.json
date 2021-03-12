@@ -1,0 +1,19 @@
+{
+  "name": "cypress-placeholder-replacer-command",
+  "version": "1.0.0",
+  "description": "A cypress command to replace placeholders within json object or string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cypress",
+    "placeholder",
+    "replacer"
+  ],
+  "author": "Benoit Wauthier",
+  "license": "MIT",
+  "dependencies": {
+    "simple-placeholder-replacer": "^1.0.0"
+  }
+}
