@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - node
+
+cache: yarn
+
+install: yarn
+
+jobs:
+  include:
+    - stage: build
+      script: 
+        - yarn test
+        - yarn lint
+        - yarn audit
+        - yarn publish-coverage
+    - stage: npm release
+      if: tag IS present
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_API_TOKEN"
+        cleanup: true
+        on:
+          tags: true

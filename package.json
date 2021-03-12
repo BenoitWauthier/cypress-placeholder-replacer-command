@@ -2,10 +2,6 @@
   "name": "cypress-placeholder-replacer-command",
   "version": "1.0.0",
   "description": "A cypress command to replace placeholders within json object or string",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "Cypress",
     "placeholder",
@@ -13,7 +9,26 @@
   ],
   "author": "Benoit Wauthier",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "mocha",
+    "test-with-coverage": "nyc mocha",
+    "publish-coverage": "yarn test-with-coverage && nyc report --reporter=text-lcov | coveralls"
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
   "dependencies": {
     "simple-placeholder-replacer": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "pre-commit": "^1.2.2"
   }
 }
