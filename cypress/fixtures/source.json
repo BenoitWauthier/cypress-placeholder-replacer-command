@@ -1,0 +1,5 @@
+{
+    "tomorrow": "{{TODAY+1}}",
+    "myName": "{{NAME}}",
+    "myFirstName": "{{firstName}}"
+}

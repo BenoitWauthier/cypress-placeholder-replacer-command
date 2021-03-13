@@ -1,13 +1,17 @@
 const placeHolderReplacer = require('simple-placeholder-replacer')
 
-Cypress.Commands.add('replacePlaceholders', { prevSubject: 'optional' }, (subject, placeholders, source = null) => {
-    var formattedOutput = null
-    if (subject) {
-        formattedOutput = placeHolderReplacer(subject, placeholders)
-    } else if (source) {
-        formattedOutput = placeHolderReplacer(source, placeholders)
+Cypress.Commands.add('replacePlaceholders', { prevSubject: 'optional' }, (subject, ...args) => {
+    var placeholders = {}
+    var placeholdersIdx = (args.length > (subject ? 0 : 1)) ? args.length-1 : -1
+    if (placeholdersIdx > -1) {
+        placeholders = args[placeholdersIdx] || {}
+        console.log('-------> placeholders from args ', placeholders)
     }
-    cy.wrap(formattedOutput)
+    const source = subject ? subject : args[0]
+    console.log('-------> ', subject)
+    console.log('-------> ', source)
+    console.log('-------> ', placeholders)
+    cy.wrap(placeHolderReplacer(source, placeholders))
 })
 
 Cypress.Commands.add('expectDeepEquals', { prevSubject: false }, (actual, expected, placeholders = {}) => {

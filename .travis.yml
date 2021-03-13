@@ -13,7 +13,6 @@ jobs:
         - yarn test
         - yarn lint
         - yarn audit
-        - yarn publish-coverage
     - stage: npm release
       if: tag IS present
       deploy:
