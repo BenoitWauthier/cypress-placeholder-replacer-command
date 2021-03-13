@@ -9,7 +9,7 @@
   ],
   "author": "Benoit Wauthier",
   "license": "MIT",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "lint": "eslint src",
     "test": "cypress run",
