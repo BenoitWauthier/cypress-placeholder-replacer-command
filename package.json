@@ -24,13 +24,13 @@
     "simple-placeholder-replacer": "^1.0.0"
   },
   "devDependencies": {
-    "coveralls": "^3.1.0",
-    "cypress": "^6.6.0",
-    "eslint": "^7.21.0",
-    "eslint-plugin-cypress": "^2.11.2",
-    "mocha": "^8.3.2",
-    "moment": "^2.29.1",
-    "nyc": "^15.1.0",
-    "pre-commit": "^1.2.2"
+    "coveralls": "3.1.0",
+    "cypress": "6.6.0",
+    "eslint": "7.21.0",
+    "eslint-plugin-cypress": "2.11.2",
+    "mocha": "8.3.2",
+    "moment": "2.29.1",
+    "nyc": "15.1.0",
+    "pre-commit": "1.2.2"
   }
 }
