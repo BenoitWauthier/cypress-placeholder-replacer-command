@@ -1,5 +1,5 @@
 # cypress-placeholder-replacer-command
-[![Build Status](https://travis-ci.com/BenoitWauthier/cypress-placeholder-replacer-command.svg?branch=master)](https://travis-ci.com/github/BenoitWauthier/cypress-placeholder-replacer-command)
+[![Build Status](https://travis-ci.com/BenoitWauthier/cypress-placeholder-replacer-command.svg?branch=main)](https://travis-ci.com/github/BenoitWauthier/cypress-placeholder-replacer-command)
 ![dependencies Status](https://img.shields.io/david/BenoitWauthier/cypress-placeholder-replacer-command)
 ![devDependencies Status](https://img.shields.io/david/dev/BenoitWauthier/cypress-placeholder-replacer-command?label=devDependencies)
 [![Known Vulnerabilities](https://snyk.io/test/github/BenoitWauthier/cypress-placeholder-replacer-command/badge.svg)](https://snyk.io/test/github/BenoitWauthier/cypress-placeholder-replacer-command)
