@@ -1,12 +1,20 @@
 const placeHolderReplacer = require('simple-placeholder-replacer')
 
-Cypress.Commands.add('replacePlaceholders', { prevSubject: 'optional' }, (subject, ...args) => {
+/**
+ * Two scenarios : 
+ *  - chained -> cytpress will fill subject as the resukt from the parent command and first args may be the key/value map
+ * - not chained -> subject will be undefined and args[0] will be the source and (optional) args[1] as the key/value map 
+ */
+Cypress.Commands.add('replacePlaceholders', { prevSubject: 'optional' }, (subject, arg1, arg2) => {
     var placeholders = {}
-    var placeholdersIdx = (args.length > (subject ? 0 : 1)) ? args.length-1 : -1
-    if (placeholdersIdx > -1) {
-        placeholders = args[placeholdersIdx] || {}
+    var source = null
+    if (subject) {
+        source = subject
+        placeholders = arg1 || placeholders
+    } else {
+        source = arg1
+        placeholders = arg2 || placeholders
     }
-    const source = subject ? subject : args[0]
     cy.wrap(placeHolderReplacer(source, placeholders))
 })
 

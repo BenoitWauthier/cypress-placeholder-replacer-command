@@ -2513,10 +2513,10 @@ signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-placeholder-replacer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/simple-placeholder-replacer/-/simple-placeholder-replacer-1.0.0.tgz#2714c0c9dea76d77c3072cb4a3dfe37ba15eba21"
-  integrity sha512-8/vFbJWxSVq6YAWsIvZGgXOwMhMh+T6LqTFTe4bLJ36/86OmAabYEFY6Fu7RKkap+K7CqLwRBy6pBD/Rvk1c1Q==
+simple-placeholder-replacer@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/simple-placeholder-replacer/-/simple-placeholder-replacer-1.1.0.tgz#98c102685e291e771287b6ebd0ff4650a00d8427"
+  integrity sha512-YfXxmCpv3+4J7/+wyCcev40/efpkmeCjquCmLJzP77xjAHd1L48vYQb/7479EOgcyyQzXNtI/5cdWp9lts7JEQ==
   dependencies:
     moment "^2.29.1"
 
