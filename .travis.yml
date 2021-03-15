@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - node
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - $HOME/.cache
 
 install: yarn
 
