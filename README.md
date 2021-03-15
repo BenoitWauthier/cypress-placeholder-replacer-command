@@ -10,7 +10,12 @@
 ![Last Commit](https://img.shields.io/github/last-commit/BenoitWauthier/cypress-placeholder-replacer-command)
 ![Contributors](https://img.shields.io/github/contributors/BenoitWauthier/cypress-placeholder-replacer-command)
 
-A cypress command to replace placeholders within json object or string
+A collection of two cypress commands :
+- replacePlaceholders : provides the ability to replace placeholders within json object or string
+- expectDeepEquals : provides the ability to expect two json objects (or string) to be tested as being "deeply" equal while optionally replacing placeholders within the "expected" item if a map with placeholders / values is provided
+
+The replacePlaceholders can be (optionally) chained as child command of e.g. a fixture command
+Internally it is using the [simple-placeholder-replacer](https://github.com/BenoitWauthier/simple-placeholder-replacer)
 
 ## Installation
 
@@ -27,7 +32,10 @@ Usage within Cypress:
 ```
 import 'cypress-fill-command'
 
-cy.replacePlaceholders ...
+cy.replacePlaceholders("My name is {{myName}}", {myName: "Benoit Wauthier"})
+cy.fixture("myfixutres/mynamefixture.json).replacePlaceholders({myName: "Benoit Wauthier"})
+cy.expectDeepEquals(actual, expected)
+cy.expectDeepEquals(actual, expected, {myName: "Benoit Wauthier"})
 
 ```
 

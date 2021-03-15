@@ -2,3 +2,4 @@ cypress
 .eslintrc.json
 .travis.yml
 renovate.json
+cypress.json
