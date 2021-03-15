@@ -30,7 +30,7 @@ npm i cypress-placeholder-replacer-command --save
 Usage within Cypress:
 
 ```
-import 'cypress-fill-command'
+import 'cypress-placeholder-replacer-command'
 
 cy.replacePlaceholders("My name is {{myName}}", {myName: "Benoit Wauthier"})
 cy.fixture("myfixutres/mynamefixture.json).replacePlaceholders({myName: "Benoit Wauthier"})
