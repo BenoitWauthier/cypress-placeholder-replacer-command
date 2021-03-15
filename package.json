@@ -1,6 +1,6 @@
 {
   "name": "cypress-placeholder-replacer-command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cypress command to replace placeholders within json object or string",
   "keywords": [
     "Cypress",
