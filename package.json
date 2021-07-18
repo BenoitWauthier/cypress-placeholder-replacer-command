@@ -24,7 +24,7 @@
     "simple-placeholder-replacer": "^1.1.0"
   },
   "devDependencies": {
-    "cypress": "6.9.1",
+    "cypress": "7.7.0",
     "eslint": "7.31.0",
     "eslint-plugin-cypress": "2.11.3",
     "moment": "2.29.1",
